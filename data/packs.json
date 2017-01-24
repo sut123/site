@@ -13,6 +13,6 @@
     		"type":"level",
     		"wave":"1",
     		"pieces":["delorean-time-machine","hoverboard","marty-mcfly"]
-    	},
+    	}
     ]
 }
