@@ -1,0 +1,18 @@
+{
+    "pieces": [
+    	{
+    		"id":"batman",
+    		"name":"Batman",
+    		"type":"character",
+    		"universe":"DC Universe",
+    		"skills":["Boomerang","Grapple","Stealth"]
+    	},
+    	{
+    		"id":"batmobile",
+    		"name":"Batmobile",
+    		"type":"vehicle",
+    		"universe":"DC Universe",
+    		"skills":["Accelerator Switch",	"Sonar Smash", "Tow Bar"]
+    	}
+    ]
+}

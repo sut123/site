@@ -1,0 +1,18 @@
+{
+    "packs": [
+    	{
+    		"id":"71200",
+    		"name":"Starter Pack",
+    		"type":"starter",
+    		"wave":"1",
+    		"pieces":["batman","batmobile","gandolf","wyldstyle"]
+    	},
+    	{
+    		"id":"71201",
+    		"name":"Back to the Future",
+    		"type":"level",
+    		"wave":"1",
+    		"pieces":["delorean-time-machine","hoverboard","marty-mcfly"]
+    	},
+    ]
+}
