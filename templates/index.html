@@ -19,11 +19,27 @@
                     <th>Wave</th>
                 </tr>
             </thead>
-            {% for pack in packs %}
+            {% for pack in data.packs %}
                 <tr>
                     <td><a href="pack/{{ pack.id }}.html">{{ pack.name }}</a></td>
                     <td>{{ pack.type }}</td>
                     <td>{{ pack.wave }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h1>Levels</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Pack</th>
+                </tr>
+            </thead>
+            {% for level in data.levels %}
+                <tr>
+                    <td><a href="level/{{ level.id }}.html">{{ level.name }}</a></td>
+                    <td>{{ level.pack }}</td>
                 </tr>
             {% endfor %}
         </table>

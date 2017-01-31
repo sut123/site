@@ -16,7 +16,7 @@ $indexData = array();
 $skillsData = array();
 
 foreach($packs->packs as $pack){
-	$indexData[] = array('name'=>$pack->name, 'id'=>$pack->id, 'type'=>$pack->type, 'wave'=>$pack->wave);
+	$indexData['packs'][] = array('name'=>$pack->name, 'id'=>$pack->id, 'type'=>$pack->type,'wave'=>$pack->wave);
 
 	$packData = array();
 	$packData['id'] = $pack->id;
@@ -39,6 +39,8 @@ foreach($packs->packs as $pack){
 
 
 foreach($levels->levels as $level){
+	$indexData['levels'][] = array('name'=>$level->name,'id'=>$level->id, 'pack'=>$level->pack);
+
 	$levelData = array();
 	$levelData['name'] = $level->name;
 	$levelData['pack'] = $level->pack;
@@ -53,7 +55,7 @@ foreach($levels->levels as $level){
 
 $indexTemplate = $twig->loadTemplate('index.html');
 $fh = fopen('docs/index.html', 'w');
-$page = $indexTemplate->render(array('packs' => $indexData));
+$page = $indexTemplate->render(array('data' => $indexData));
 fwrite($fh, $page);
 $time_post = microtime(true);
 $time = $time_post-$time_pre;
