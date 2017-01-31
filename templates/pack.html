@@ -11,6 +11,22 @@
     <body id="post">
       <div id="content">
         <h1>{{ pack.name }}</h1>
+        <p>{{ pack.id }}</p>
+        <p>Wave {{ pack.wave }}</p>
+        {% if pack.pieces %}
+            <h3>Pieces</h3>
+        {% endif %}
+        
+        {% for piece in pack.pieces %}
+            <p>{{ piece.name }}</p>
+            <p>{{ piece.universe }}</p>
+            <ul>
+            {% for skill in piece.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+        
       </div>
     </body>
 </html>

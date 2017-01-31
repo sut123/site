@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ level.name }} | Dimensions Tracker</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body id="post">
+      <div id="content">
+        <h1>{{ level.name }}</h1>
+        {% for minikit in level.minikits %}
+            <p>Minikit {{ minikit.id }}</p>
+            {% for ability in minikit.abilities %}
+                {{ ability }}
+                {% set pieces = attribute(skills, ability) %}
+
+                {% for key, index in pieces %}
+                   {{ index }}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+      </div>
+    </body>
+</html>

@@ -3,16 +3,106 @@
     	{
     		"id":"71200",
     		"name":"Starter Pack",
-    		"type":"starter",
+    		"type":"Starter",
     		"wave":"1",
-    		"pieces":["batman","batmobile","gandolf","wyldstyle"]
+    		"pieces":[
+                {
+                    "name":"Batman",
+                    "type":"Character",
+                    "universe":"DC Universe",
+                    "skills":["Boomerang","Grapple","Stealth"]
+                },
+                {
+                    "name":"Gandolf",
+                    "type":"Character",
+                    "universe":"Lord of the Rings",
+                    "skills":["Illumination","Magic","Magic Shield"]
+                },
+                {
+                    "name":"Wyldstyle",
+                    "type":"Character",
+                    "universe":"Lego Movie",
+                    "skills":["Acrobat","Master Builder","Relic Detection"]
+                },
+                {
+                    "name":"Batmobile",
+                    "type":"Vehicle",
+                    "universe":"DC Universe",
+                    "skills":["Accelerator Switch", "Sonar Smash", "Tow Bar"]
+                }
+            ]
     	},
     	{
     		"id":"71201",
     		"name":"Back to the Future",
-    		"type":"level",
+    		"type":"Level",
     		"wave":"1",
-    		"pieces":["delorean-time-machine","hoverboard","marty-mcfly"]
-    	}
+            "universe":"Back to the Future",
+    		"pieces":[
+                {
+                    "name":"Marty McFly",
+                    "type":"Character",
+                    "skills":["Sonic Smash"]
+                },
+                {
+                    "name":"DeLorean Time Machine",
+                    "type":"Vehicle",
+                    "skills":["Accelerator Switch", "Cargo Hook", "Electricity", "Flight Dock", "Flying",  "Silver Lego Destroy", "Time Travel Switch", "Tow Bar"]
+                },
+                {
+                    "name":"Hoverboard",
+                    "type":"Vehicle",
+                    "skills":["Flying", "Silver Lego Destroy"]
+                }
+            ]
+    	},
+        {
+            "id":"71202",
+            "name":"The Simpsons",
+            "type":"Level",
+            "wave":"1",
+            "universe":"The Simpsons",
+            "pieces":[
+                {
+                    "name":"Homer Simpson",
+                    "type":"Character",
+                    "skills":["Big Transformation","Sonic Smash","Super Strength"]
+                },
+                {
+                    "name":"Homer's Car",
+                    "type":"Vehicle",
+                    "skills":["Accelerator Switch", "Dive", "Silver Lego Destroy", "Tow Bar"]
+                },
+                {
+                    "name":"Taunt-o-Vision",
+                    "type":"Vehicle",
+                    "skills":["Laser", "Silver Lego Destroy"]
+                }
+            ]
+        },
+        {
+            "id":"71203",
+            "name":"Portal 2",
+            "type":"Level",
+            "wave":"1",
+            "universe":"Portal 2",
+            "pieces":[
+                {
+                    "name":"Chell",
+                    "type":"Character",
+                    "skills":["Acrobat","Portal Gun"]
+                },
+                {
+                    "name":"Companion Cube",
+                    "type":"Vehicle",
+                    "skills":["Laser Deflection","Weight Switch"]
+                },
+                {
+                    "name":"Sentry Turret",
+                    "type":"Vehicle",
+                    "skills":["Cargo Hook","Flight Dock Flying", "Silver Lego Destroy"]
+                }
+            ]
+        }
     ]
 }

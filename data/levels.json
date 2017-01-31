@@ -1,0 +1,67 @@
+{
+    "levels": [
+    	{
+    		"id":"sp1",
+    		"name":"Follow the Lego Brick Road",
+    		"pack":"71200",
+    		"minikits":[
+    			{
+    				"id":"1",
+    				"location":"Munchkin Village",
+    				"abilities":["Silver Lego Destroy"]
+    			},
+    			{
+    				"id":"2",
+    				"location":"Munchkin Village",
+    				"abilities":["Hacking"]
+    			},
+    			{
+    				"id":"3",
+    				"location":"Munchkin Village",
+    				"abilities":["Hazard Cleaner"]
+    			},
+    			{
+    				"id":"4",
+    				"location":"Yellow Brick Road",
+    				"abilities":["Grapple","Relic Detection"]
+    			},
+    			{
+    				"id":"5",
+    				"location":"The Forest",
+    				"abilities":["Digging","Super Strength","Tracking"]
+    			},
+    			{
+    				"id":"6",
+    				"location":"The Forest",
+    				"abilities":["Suspend Ghosts","Trap Ghosts"]
+    			},
+    			{
+    				"id":"7",
+    				"location":"The Forest",
+    				"abilities":["Magic","Suspend Ghosts","Trap Ghosts"]
+    			},
+    			{
+    				"id":"8",
+    				"location":"The Forest",
+    				"abilities":[]
+    			},
+    			{
+    				"id":"9",
+    				"location":"Wicked Witch's Castle",
+    				"abilities":["Laser","Magic"]
+    			},
+    			{
+    				"id":"10",
+    				"location":"Wicked Witch's Castle",
+    				"abilities":["Laser","Tow Bar"]
+    			}
+
+    		],
+    		"rescue":{
+    			"location":"The Forest",
+    			"abilities":["Laser","Suspend Ghosts","Trap Ghosts"]
+    		},
+    		"rulebreaker":"125000"
+    	}
+    ]
+}
