@@ -1,0 +1,55 @@
+{
+    "worlds": [
+    	{
+    		"id":"back-to-the-future",
+    		"name":"Back to the Future",
+    		"rulebreaker":"150000",
+    		"redbrick":{
+    			"name":"Faulty Flux Drive",
+    			"cost":"500000",
+    			"description":"Add special effects from Back to the Future to vehicles."
+    		},
+    		"goldbricks":[
+    			{
+    				"skills":["Water Spray"],
+    				"notes":"(1885) Spray the plant in the middle of the town. (1985) Destroy the tree. Rebuild into a bird house."
+    			},
+    			{
+    				"skills":["Water Spray"],
+    				"notes":"(1885) Put out the fires around the campsite."
+    			},
+    			{
+    				"skills":["Laser", "Suspend Ghosts", "Trap Ghosts"],
+    				"notes":"(1885) In the large cavern under the town, trap the ghosts and then use laser on the gold wall."
+    			}
+
+    		],
+    		"quests":[
+    			{
+    				"location":"1885",
+    				"notes":"(1885) Barking Mad - Defeat the 15 enemies and then Mad Dog."
+    			}
+    		],
+    		"races":[
+    			{
+    				"type":"Ground",
+    				"location":"1885",
+    				"notes":"Gold - 1:00 | 7 Seconds Between Rings - Requires Train Station (70,000 LEGO Studs)"
+    			}
+    		],
+    		"minikits":[
+    			{
+    				"location":"1885",
+    				"notes":"While riding the car, press the buttons that appear."
+    			}
+    		],
+    		"renovations":[
+    			{
+    				"cost":"50000",
+    				"location":"1885",
+    				"notes":"Restore the 1885 Hill Valley Sign"
+    			}
+    		]
+        }
+    ]
+}

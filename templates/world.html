@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ world.name }} | Dimensions Tracker</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body id="post">
+      <div id="content">
+        <h1>{{ world.name }}</h1>
+        <p>Rulebreaker: {{ world.rulebreaker }}</p>
+        <h2>Gold Bricks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Skill(s)</td>
+                    <td>Notes</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for goldbrick in world.goldbricks %}
+                <tr>
+                    <td>{{ goldbrick.skills }}</td>
+                    <td>{{ goldbrick.notes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <h2>Quests</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Location</td>
+                    <td>Notes</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for quest in world.quests %}
+                <tr>
+                    <td>{{ quest.location }}</td>
+                    <td>{{ quest.notes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <h2>Races</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Type</td>
+                    <td>Location</td>
+                    <td>Notes</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for race in world.races %}
+                <tr>
+                    <td>{{ race.type }}</td>
+                    <td>{{ race.location }}</td>
+                    <td>{{ race.notes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <h2>Minikits</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Location</td>
+                    <td>Notes</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for minikit in world.minkits %}
+                <tr>
+                    <td>{{ minikit.location }}</td>
+                    <td>{{ minikit.notes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <p><strong>Total Gold Bricks: </strong>{{ world.goldbricks|length + world.quests|length + world.races|length + world.minikits|length + 1 }}
+
+        <h2>Renovations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Cost</td>
+                    <td>Location</td>
+                    <td>Notes</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for renovation in world.renovations %}
+                <tr>
+                    <td>{{ renovation.cost }}</td>
+                    <td>{{ renovation.location }}</td>
+                    <td>{{ renovation.notes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+      </div>
+    </body>
+</html>

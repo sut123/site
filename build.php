@@ -12,6 +12,10 @@ $packs = json_decode($packsFile);
 $levelsFile =  file_get_contents('data/levels.json');
 $levels = json_decode($levelsFile);
 
+$worldsFile =  file_get_contents('data/worlds.json');
+$worlds = json_decode($worldsFile);
+
+
 $indexData = array();
 $skillsData = array();
 
@@ -50,6 +54,24 @@ foreach($levels->levels as $level){
 	$levelFile = 'docs/level/'.$level->id.'.html'; // or .php
 	$fh = fopen($levelFile, 'w'); // or die("error");
 	$page = $levelTemplate->render(array('level' => $levelData, 'skills' => $skillsData));
+	fwrite($fh, $page);
+}
+
+foreach($worlds->worlds as $world){
+	$worldData = array();
+	$worldData['id'] = $world->id;
+	$worldData['name'] = $world->name;
+	$worldData['rulebreaker'] = $world->rulebreaker;
+	$worldData['goldbricks'] = $world->goldbricks;
+	$worldData['quests'] = $world->quests;
+	$worldData['races'] = $world->races;
+	$worldData['minikits'] = $world->minikits;
+	$worldData['renovations'] = $world->renovations;
+
+	$worldTemplate = $twig->loadTemplate('world.html');
+	$worldFile = 'docs/world/'.$world->id.'.html'; // or .php
+	$fh = fopen($worldFile, 'w'); // or die("error");
+	$page = $worldTemplate->render(array('world' => $worldData));
 	fwrite($fh, $page);
 }
 
