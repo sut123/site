@@ -43,6 +43,13 @@
                 </tr>
             {% endfor %}
         </table>
+
+        <h1>Adventure Worlds</h1>
+        <ul>
+        {% for world in data.worlds %}
+            <li><a href="world/{{ world.id }}.html">{{ world.name }}</a></li>
+        {% endfor %}
+        </ul>
       </div>
     </body>
 </html>

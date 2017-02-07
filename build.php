@@ -58,6 +58,8 @@ foreach($levels->levels as $level){
 }
 
 foreach($worlds->worlds as $world){
+	$indexData['worlds'][] = array('name'=>$world->name,'id'=>$world->id);
+
 	$worldData = array();
 	$worldData['id'] = $world->id;
 	$worldData['name'] = $world->name;
